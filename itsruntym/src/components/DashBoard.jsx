@@ -9,75 +9,31 @@ import { AppProvider } from '@toolpad/core/AppProvider';
 import { DashboardLayout } from '@toolpad/core/DashboardLayout';
 import { useDemoRouter } from '@toolpad/core/internal';
 import Logo from "./images/logo.PNG";
+import { useNavigate } from 'react-router-dom';
 
+
+// const navigate = useNavigate();
 const NAVIGATION = [
   {
-    segment: 'Topic1',
-    title: 'Topic1',
+    // onclick={()=>(navigate('/'))}
+    segment: 'DSA',
+    title: 'DSA',
     icon: <DashboardIcon />,
-    children: [
-        {
-          segment: 'SubTopic1',
-          title: 'SubTopic1',
-          icon: <ShoppingCartIcon />,
-        },
-        {
-          segment: 'SubTopic2',
-          title: 'SubTopic2',
-          icon: <ShoppingCartIcon />,
-        },
-      ],
   },
   {
-    segment: 'Topic2',
-    title: 'Topic2',
+    segment: 'CSE',
+    title: 'CSE',
     icon: <ShoppingCartIcon />,
-    children: [
-        {
-          segment: 'SubTopic1',
-          title: 'SubTopic1',
-          icon: <ShoppingCartIcon />,
-        },
-        {
-          segment: 'SubTopic2',
-          title: 'SubTopic2',
-          icon: <ShoppingCartIcon />,
-        },
-      ],
   },
   {
-    segment: 'Topic3',
-    title: 'Topic3',
+    segment: 'Java',
+    title: 'Java',
     icon: <ShoppingCartIcon />,
-    children: [
-        {
-          segment: 'SubTopic1',
-          title: 'SubTopic1',
-          icon: <ShoppingCartIcon />,
-        },
-        {
-          segment: 'SubTopic2',
-          title: 'SubTopic2',
-          icon: <ShoppingCartIcon />,
-        },
-      ],
   },
   {
     segment: 'Topic4',
     title: 'Topic4',
     icon: <ShoppingCartIcon />,
-    children: [
-        {
-          segment: 'SubTopic1',
-          title: 'SubTopic1',
-          icon: <ShoppingCartIcon />,
-        },
-        {
-          segment: 'SubTopic2',
-          title: 'SubTopic2',
-          icon: <ShoppingCartIcon />,
-        },
-      ],
   },
 ];
 
